@@ -1,5 +1,5 @@
 
-Alooh.apk : Alooh Snow 보드를 등록하기 위한 안드로이드 앱입니다.
+Alooh.apk : Alooh Snow 장치를 등록하기 위한 안드로이드 앱입니다.
 
 MQTTSDK : 안드로이드용 MQTT 라이브러리 및 가이드 문서입니다.
 
