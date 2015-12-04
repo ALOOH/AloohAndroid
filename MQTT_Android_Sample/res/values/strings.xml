@@ -35,4 +35,8 @@
     <string name="project">PROJECT</string>
     <string name="network_error">네트워크 에러</string>
     <string name="server_error">서버에러</string>
+    <string name="temperature">설정온도 : </string>
+    <string name="insert_temp">설정온도를 입력하세요 !</string>
+    <string name="insert_serial">Please insert correct SERIAL.</string>
+    <string name="serial">SERIAL</string>
 </resources>

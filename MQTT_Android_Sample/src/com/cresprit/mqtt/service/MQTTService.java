@@ -37,7 +37,7 @@ public class MQTTService extends Service {
         KeyList = MQTTSDK.AloohCloud_GetKeyInfos(deviceInfo.getAuid());
         Log.i("","feedId:"+deviceInfo.getTopicId()+" AccessKey : "+KeyList.get(0).getAccessKey());
         MQTTSDK.AloohMessage_Subscribe(deviceInfo.getTopicId(), KeyList.get(0).getAccessKey(), listener);
-
+        Log.i("","After subscribe");
         super.onStart(intent, startId);
     }
 

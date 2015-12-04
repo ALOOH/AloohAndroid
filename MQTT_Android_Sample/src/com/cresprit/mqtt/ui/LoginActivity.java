@@ -24,12 +24,15 @@ public class LoginActivity extends Activity implements View.OnClickListener, OnC
 	
 	private int DIALOG_LOGIN = 0;
 	private Button btnLogin;
+
 	private EditText edtId;
 	private EditText edtPasswd;
+
 	private CheckBox cbRememberPwd;
 	private UserManager userMgr=null;
 	private String m_pId;
 	private String m_pPasswd;
+	private String m_pSerial;
 	private boolean isChecked=false;
 	
 	@Override
@@ -47,7 +50,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, OnC
 		
 		edtPasswd = (EditText)findViewById(R.id.passwd_edt);
 		String pwd = userMgr.getPassword();
-
+		
 		cbRememberPwd = (CheckBox)findViewById(R.id.check_passwd);
 		cbRememberPwd.setOnCheckedChangeListener(this);	
 		
@@ -62,6 +65,8 @@ public class LoginActivity extends Activity implements View.OnClickListener, OnC
 		}
 		btnLogin = (Button)findViewById(R.id.loginbtn);
 		btnLogin.setOnClickListener(this);
+		
+
 	}
 
 	@Override
@@ -70,7 +75,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, OnC
 		switch(v.getId())
 		{
 		case R.id.loginbtn:
-			
+		
 			m_pId = edtId.getText().toString();
 			m_pPasswd = edtPasswd.getText().toString();
 			
@@ -110,6 +115,8 @@ public class LoginActivity extends Activity implements View.OnClickListener, OnC
 			userMgr.doLogin();
 			
 			break;
+
+		
 		}
 	}
 

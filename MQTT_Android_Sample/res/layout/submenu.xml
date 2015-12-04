@@ -101,6 +101,8 @@
         android:text="@+string/publish"
         android:gravity="center"        />
 
+    
+    
     <Button
         android:id="@+id/subscribe"
         android:layout_height="wrap_content"

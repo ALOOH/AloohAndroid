@@ -15,6 +15,7 @@ public class MessageManager{
 	private static ArrayList<String> list;
 	private static ArrayList<String> date;
 	public static String MSG_RECEIVE = "com.cresprit.mqtt.ConnectionMgr.receive_message";
+	public static String MSG_TEMPERATURE = "com.cresprit.mqtt.MessageManager.Temp";
 	private static MessageAdapter adapter;	private Context mContext= null;
 	ISubscribeListener _listener = null;
 	
